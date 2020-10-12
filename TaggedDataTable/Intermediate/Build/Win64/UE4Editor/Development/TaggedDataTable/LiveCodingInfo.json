@@ -1,0 +1,15 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.TaggedDataTable.cpp.obj": [
+			"TaggedDataTable.cpp.obj",
+			"TaggedDataTableSubsystem.cpp.obj"
+		],
+		"Module.TaggedDataTable.gen.cpp.obj": [
+			"HasTaggedDataTableInterface.gen.cpp.obj",
+			"TaggedDataTable.init.gen.cpp.obj",
+			"TaggedDataTableRow.gen.cpp.obj",
+			"TaggedDataTableSubsystem.gen.cpp.obj"
+		]
+	}
+}

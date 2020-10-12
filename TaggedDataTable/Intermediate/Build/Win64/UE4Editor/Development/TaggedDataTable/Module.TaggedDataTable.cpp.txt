@@ -1,0 +1,15 @@
+K:\ue4lib\UE4Test\Plugins\TaggedDataTable\Intermediate\Build\Win64\UE4Editor\Development\TaggedDataTable\Definitions.TaggedDataTable.h
+K:/ue4lib/UE4Test/Plugins/TaggedDataTable/Source/TaggedDataTable/Private/TaggedDataTable.cpp
+K:\ue4lib\UE4Test\Plugins\TaggedDataTable\Source\TaggedDataTable\Public\TaggedDataTable.h
+K:/ue4lib/UE4Test/Plugins/TaggedDataTable/Source/TaggedDataTable/Private/TaggedDataTableSubsystem.cpp
+K:\ue4lib\UE4Test\Plugins\TaggedDataTable\Source\TaggedDataTable\Public\TaggedDataTableSubsystem.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\GameplayTags\Classes\GameplayTagContainer.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\GameplayTags\GameplayTagContainer.generated.h
+K:\ue4lib\UE4Test\Plugins\TaggedDataTable\Intermediate\Build\Win64\UE4Editor\Inc\TaggedDataTable\TaggedDataTableSubsystem.generated.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/DataTable.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Public\DataTableUtils.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DataTable.generated.h
+K:\ue4lib\UE4Test\Plugins\TaggedDataTable\Source\TaggedDataTable/Public/HasTaggedDataTableInterface.h
+K:\ue4lib\UE4Test\Plugins\TaggedDataTable\Intermediate\Build\Win64\UE4Editor\Inc\TaggedDataTable\HasTaggedDataTableInterface.generated.h
+K:\ue4lib\UE4Test\Plugins\TaggedDataTable\Source\TaggedDataTable/Public/TaggedDataTableRow.h
+K:\ue4lib\UE4Test\Plugins\TaggedDataTable\Intermediate\Build\Win64\UE4Editor\Inc\TaggedDataTable\TaggedDataTableRow.generated.h

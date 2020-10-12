@@ -1,0 +1,2 @@
+K:\ue4lib\UE4Test\Plugins\TaggedDataTable\Intermediate\Build\Win64\UE4Editor\Development\TaggedDataTable\Definitions.TaggedDataTable.h
+K:\ue4lib\UE4Test\Plugins\TaggedDataTable\Source\TaggedDataTable\Public\TaggedDataTable.h

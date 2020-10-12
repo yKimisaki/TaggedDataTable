@@ -1,0 +1,14 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-TaggedDataTable.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"K:\ue4lib\UE4Test\Intermediate\Build\Win64\UE4TestEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"K:\ue4lib\UE4Test\Plugins\TaggedDataTable\Intermediate\Build\Win64\UE4Editor\Development\TaggedDataTable\Module.TaggedDataTable.cpp.obj"
+"K:\ue4lib\UE4Test\Plugins\TaggedDataTable\Intermediate\Build\Win64\UE4Editor\Development\TaggedDataTable\Module.TaggedDataTable.gen.cpp.obj"
+"K:\ue4lib\UE4Test\Plugins\TaggedDataTable\Intermediate\Build\Win64\UE4Editor\Development\TaggedDataTable\Default.rc2.res"
+/OUT:"K:\ue4lib\UE4Test\Plugins\TaggedDataTable\Intermediate\Build\Win64\UE4Editor\Development\TaggedDataTable\UE4Editor-TaggedDataTable.lib"
+/INCLUDE:IMPLEMENT_MODULE_TaggedDataTable
