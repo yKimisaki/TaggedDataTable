@@ -24,6 +24,9 @@ public:
 	virtual void Initialize(FSubsystemCollectionBase& Collection) override;
 	virtual void Deinitialize() override;
 
+	UFUNCTION(BlueprintCallable)
+		int GetAllDataTables(const FString& ContextString, const FGameplayTag& GameplayTag, TArray<UDataTable*>& OutTableArray);
+
 	template<class T>
 	int GetAllRows(const FString& ContextString, const FGameplayTag& GameplayTag, TArray<T*>& OutRowArray)
 	{

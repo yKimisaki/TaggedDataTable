@@ -57,3 +57,13 @@ int UTaggedDataTableSubsystem::SelectDataTablesByTag(const FString& ContextStrin
 
 	return OutDataTables.Num();
 }
+
+int UTaggedDataTableSubsystem::GetAllDataTables(const FString& ContextString, const FGameplayTag& GameplayTag, TArray<UDataTable*>& OutTableArray)
+{
+	if (SelectDataTablesByTag(ContextString, GameplayTag, OutTableArray) == 0)
+	{
+		return 0;
+	}
+
+	return OutTableArray.Num();
+}
