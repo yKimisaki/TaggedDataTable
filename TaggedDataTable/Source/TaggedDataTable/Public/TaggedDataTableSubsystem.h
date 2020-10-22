@@ -45,7 +45,7 @@ public:
 	}
 
 	template<class TKey, class TElement>
-	int MapDataTable(const FString& ContextString, const FGameplayTag& GameplayTag, const TFunction<TKey(const FName&, const TElement&)>& KeySelector, TMap<TKey, TElement>& OutMap)
+	int GetAsMap(const FString& ContextString, const FGameplayTag& GameplayTag, const TFunction<TKey(const FName&, const TElement&)>& KeySelector, TMap<TKey, TElement>& OutMap)
 	{
 		TArray<UDataTable*> MatchedDataTables;
 		if (SelectDataTablesByTag(ContextString, GameplayTag, MatchedDataTables) == 0)
@@ -55,10 +55,32 @@ public:
 
 		for (auto MatchedDataTable : MatchedDataTables)
 		{
-			TArray<TElement*> OutRowArray;
-			MatchedDataTable->ForeachRow<TElement>(ContextString, [&Result, &KeySelector](const FName& Key, const TElement& Value)
+			MatchedDataTable->ForeachRow<TElement>(ContextString, [&OutMap, &KeySelector](const FName& RowId, const TElement& Value)
 				{
-					OutMap.Add(KeySelector(Key, Value), Value);
+					OutMap.Add(KeySelector(RowId, Value), Value);
+				});
+		}
+
+		return OutMap.Num();
+	}
+
+	template<class TKey, class TElement>
+	int GetAsMap(const FString& ContextString, const FGameplayTag& GameplayTag, const TFunction<TKey(const FName&, const TElement&)>& KeySelector, TMap<TKey, TArray<TElement>>& OutMap)
+	{
+		TArray<UDataTable*> MatchedDataTables;
+		if (SelectDataTablesByTag(ContextString, GameplayTag, MatchedDataTables) == 0)
+		{
+			return 0;
+		}
+
+		for (auto MatchedDataTable : MatchedDataTables)
+		{
+			MatchedDataTable->ForeachRow<TElement>(ContextString, [&OutMap, &KeySelector](const FName& RowId, const TElement& Value)
+				{
+					const TKey& Key = KeySelector(RowId, Value);
+					if (!OutMap.Contains(Key))
+						OutMap.Add(Key, TArray<TElement>());
+					OutMap[Key].Add(Value);
 				});
 		}
 
